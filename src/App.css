@@ -1,3 +1,7 @@
+body {
+  background-color: #213547;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,9 +10,16 @@
 }
 
 .change-btn {
+  color: #154877;
   font-size: 24px;
   display: block;
   text-align: center;
   margin: 0 auto 40px;
-  border: 1px solid black;
+  border: 2px solid #111c27;
+}
+
+.change-btn:active {
+  transition: 0.2s;
+  background-color: #d6d9db;
+  border-color: #d6d9db;
 }

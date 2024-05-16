@@ -7,9 +7,7 @@ interface Props {
 
 const Circle: React.FC<Props> = ({number}) => {
     return (
-        <div className="circle">
-            <span className="circle-number">{number}</span>
-        </div>
+        <div className="circle">{number}</div>
     );
 };
 

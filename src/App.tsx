@@ -1,19 +1,18 @@
 import './App.css'
 import {useState} from "react";
-import Circle from "./components/Circle/Circle.tsx";
+import Circle from "./components/Circle/Circle";
 
-function App() {
+const App = () => {
     const [numbers, setNumbers] = useState([5, 11, 16, 23, 32]);
 
     const changeNumbers = ():void => {
         const oldNumbers = [...numbers];
-
-        let newNumbers:  number[] = [];
+        const newNumbers:  number[] = [];
 
         while (newNumbers.length < 5) {
-            let randomNum = Math.floor(Math.random() * 32) + 5;
+            const randomNum = Math.floor(Math.random() * 32) + 5;
 
-            if (!oldNumbers.includes(randomNum)) {
+            if (!oldNumbers.includes(randomNum) && !newNumbers.includes(randomNum)) {
                 newNumbers.push(randomNum);
             }
         }
